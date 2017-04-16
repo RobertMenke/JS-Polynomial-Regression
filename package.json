@@ -1,0 +1,22 @@
+{
+  "name": "rm-emoji-picker",
+  "description": "A javascript library that predicts dependent variables using polynomial regression.",
+  "version": "0.9.0",
+  "keywords": ["regression", "polynomial regression", "prediction", "statistics"],
+  "license": "MIT",
+  "author" : "Robert Menke",
+  "repository" : "https://github.com/RobertMenke/rm-emoji-picker",
+  "bugs" : "https://github.com/RobertMenke/rm-emoji-picker/issues",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "webpack": "1.14.0",
+    "d3": "3.5.5",
+    "nvd3": "^1.8.5"
+  },
+  "scripts": {
+    "start": "webpack --progress --watch"
+  }
+}
