@@ -1,4 +1,4 @@
-![alt tag](https://raw.githubusercontent.com/RobertMenke/JS-Polynomial-Regression/master/examples/polynomial_regression_example.png)
+![alt tag](/example/polynomial_regression_example.png)
 
 # About
 
