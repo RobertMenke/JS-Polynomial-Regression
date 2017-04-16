@@ -1,5 +1,5 @@
 {
-  "name": "rm-emoji-picker",
+  "name": "js-polynomial-regression",
   "description": "A javascript library that predicts dependent variables using polynomial regression.",
   "version": "0.9.0",
   "keywords": ["regression", "polynomial regression", "prediction", "statistics"],
