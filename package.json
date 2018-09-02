@@ -1,7 +1,7 @@
 {
   "name": "js-polynomial-regression",
   "description": "A javascript library that predicts dependent variables using polynomial regression.",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "keywords": ["regression", "polynomial regression", "prediction", "statistics"],
   "license": "MIT",
   "author" : "Robert Menke",
