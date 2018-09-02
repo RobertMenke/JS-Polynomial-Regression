@@ -5,6 +5,7 @@
   "keywords": ["regression", "polynomial regression", "prediction", "statistics"],
   "license": "MIT",
   "author" : "Robert Menke",
+  "main": "./src/PolynomialRegression.js",
   "repository" : "https://github.com/RobertMenke/JS-Polynomial-Regression",
   "bugs" : "https://github.com/RobertMenke/JS-Polynomial-Regression/issues",
   "devDependencies": {
