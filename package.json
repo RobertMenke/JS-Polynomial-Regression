@@ -1,22 +1,33 @@
 {
   "name": "js-polynomial-regression",
   "description": "A javascript library that predicts dependent variables using polynomial regression.",
-  "version": "0.9.0",
-  "keywords": ["regression", "polynomial regression", "prediction", "statistics"],
+  "version": "0.9.1",
+  "keywords": [
+    "regression",
+    "polynomial regression",
+    "prediction",
+    "statistics"
+  ],
   "license": "MIT",
-  "author" : "Robert Menke",
-  "repository" : "https://github.com/RobertMenke/JS-Polynomial-Regression",
-  "bugs" : "https://github.com/RobertMenke/JS-Polynomial-Regression/issues",
+  "author": "Robert Menke",
+  "repository": "https://github.com/RobertMenke/JS-Polynomial-Regression",
+  "bugs": "https://github.com/RobertMenke/JS-Polynomial-Regression/issues",
+  "main": "dist/PolynomialRegression.js",
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-core": "^6.23.1",
-    "babel-loader": "^6.2.10",
-    "babel-preset-es2015": "^6.22.0",
-    "webpack": "1.14.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.6",
     "d3": "3.5.5",
-    "nvd3": "^1.8.5"
+    "nvd3": "^1.8.5",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
   },
   "scripts": {
-    "start": "webpack --progress --watch"
+    "start:dev": "NODE_ENV=development webpack --progress --watch --mode development",
+    "start:example:dev": "NODE_ENV=development webpack --progress --watch --config weback.example.config.js --mode development",
+    "build": "NODE_ENV=production webpack --progress --mode production",
+    "build:example": "NODE_ENV=production webpack --progress --config weback.example.config.js --mode production",
+    "build:all": "npm run build && npm run build:example"
   }
 }
