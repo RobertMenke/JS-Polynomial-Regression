@@ -3,12 +3,10 @@ const path = require('path')
 
 module.exports = {
     entry    : {
-        PolynomialRegression: './src/PolynomialRegression.js'
+        demo : path.resolve(__dirname, 'example/src/demo.js')
     },
     output   : {
-        path    : path.resolve(__dirname, 'dist/'),
-        filename: '[name].js',
-        libraryTarget : "umd"
+        path : path.resolve(__dirname, 'example/build/')
     },
     module  : {
         rules : [
@@ -27,7 +25,7 @@ module.exports = {
                         ]
                     }
                 }
-            }
+            },
         ]
     },
     devtool: process.env.NODE_ENV === "development" ? "inline-source-map" : false

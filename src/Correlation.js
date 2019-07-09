@@ -13,7 +13,7 @@
  */
 export default class Correlation {
     
-    constructor(x, y){
+    constructor(x, y) {
         this.x       = x;
         this.y       = y;
     }
@@ -22,7 +22,7 @@ export default class Correlation {
      * Gets the correlation coefficient of 2 lists
      * @returns {number}
      */
-    correlationCoefficient(){
+    correlationCoefficient() {
         return this.diffFromAvg() / (Math.sqrt(this.diffFromAvgSqrd(this.x) * this.diffFromAvgSqrd(this.y)));
     }
     
@@ -32,7 +32,7 @@ export default class Correlation {
      * @param {Array} list
      * @returns {number}
      */
-    avg(list){
+    avg(list) {
         return list.reduce((carry, item) => item + carry, 0) / list.length;
     }
     
@@ -41,7 +41,7 @@ export default class Correlation {
      * @param aList
      * @returns {number}
      */
-    stdv(aList){
+    stdv(aList) {
         return Math.sqrt(this.diffFromAvgSqrd(aList) / (aList.length - 1));
     }
     
@@ -49,7 +49,7 @@ export default class Correlation {
      * The B part of the regression equation -> y = mx + B
      * @returns {number}
      */
-    b0(){
+    b0() {
         return this.avg(this.y) - this.b1() * this.avg(this.x);
     }
     
@@ -57,7 +57,7 @@ export default class Correlation {
      * the M part of the regression equation -> y = Mx + b
      * @returns {number}
      */
-    b1(){
+    b1() {
         return this.diffFromAvg() / this.diffFromAvgSqrd(X);
     }
     
@@ -66,8 +66,7 @@ export default class Correlation {
      * gets the sum of (Xi - Mx)(Yi - My)
      * @returns {number}
      */
-    diffFromAvg(){
-
+    diffFromAvg() {
         const avg_x = this.avg(this.x);
         const avg_y = this.avg(this.y);
 
@@ -124,5 +123,4 @@ export default class Correlation {
     linearRegression (independentVariable){
         return this.b1() * independentVariable + this.b0();
     }
-    
 }

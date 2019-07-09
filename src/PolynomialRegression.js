@@ -44,9 +44,7 @@ export default class PolynomialRegression {
         return new PolynomialRegression(data_points, degrees);
     }
     
-    constructor(data_points, degrees){
-    
-    
+    constructor(data_points, degrees) {
         //private object variables
         this.data        = data_points;
         this.degree      = degrees;

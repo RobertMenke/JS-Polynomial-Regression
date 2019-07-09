@@ -11,10 +11,10 @@ export default class Matrix {
      * @returns {*}
      */
     backwardSubstitution (anyMatrix, arr, row, col) {
-
         if (row < 0 || col < 0) {
             return arr;
-        } else {
+        } 
+        else {
             const rows  = anyMatrix.length;
             const cols  = anyMatrix[0].length - 1;
             let current = 0;
