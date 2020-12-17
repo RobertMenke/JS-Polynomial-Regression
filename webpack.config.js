@@ -1,5 +1,5 @@
-const webpack = require("webpack")
-const path = require('path')
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
     entry    : {
@@ -8,7 +8,8 @@ module.exports = {
     output   : {
         path    : path.resolve(__dirname, 'dist/'),
         filename: '[name].js',
-        libraryTarget : "umd"
+        libraryTarget : 'umd',
+        globalObject: 'this'
     },
     module  : {
         rules : [
@@ -30,5 +31,5 @@ module.exports = {
             }
         ]
     },
-    devtool: process.env.NODE_ENV === "development" ? "inline-source-map" : false
+    devtool: process.env.NODE_ENV === 'development' ? 'inline-source-map' : false
 }
