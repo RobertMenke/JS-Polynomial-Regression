@@ -1,7 +1,7 @@
 {
   "name": "js-polynomial-regression",
   "description": "A javascript library that predicts dependent variables using polynomial regression.",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "keywords": [
     "regression",
     "polynomial regression",
@@ -10,11 +10,11 @@
   ],
   "license": "MIT",
   "author": "Robert Menke",
-  "repository": "https://github.com/RobertMenke/JS-Polynomial-Regression",
-  "bugs": "https://github.com/RobertMenke/JS-Polynomial-Regression/issues",
+  "repository": "https://github.com/dndhm/JS-Polynomial-Regression",
+  "bugs": "https://github.com/dndhm/JS-Polynomial-Regression/issues",
   "main": "dist/PolynomialRegression.js",
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
+    "@babel/cli": "^7.12.10",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "babel-loader": "^8.0.6",
